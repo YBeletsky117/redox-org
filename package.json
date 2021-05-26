@@ -1,0 +1,86 @@
+{
+  "name": "@redox-org/react-native-redox",
+  "version": "1.0.0",
+  "description": "This's library with mobile components",
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint .",
+    "prestorybook": "rnstl",
+    "storybook": "ln -s ../@storybook/react/bin/index.js storybookweb && mv storybookweb node_modules/.bin && storybookweb -p 7007 --config-dir storybook-web",
+    "build-storybook": "build-storybook --config-dir storybook-web"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YBeletsky117/redox-group.git"
+  },
+  "keywords": [
+    "REDOX",
+    "JavaScript",
+    "TypeScript",
+    "redox",
+    "Mobile",
+    "React",
+    "React-Native"
+  ],
+  "author": "Redox Group",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YBeletsky117/redox-group/issues"
+  },
+  "homepage": "https://github.com/YBeletsky117/redox-group#readme",
+  
+  "dependencies": {
+    "moment": "^2.29.1",
+    "react": "17.0.1",
+    "react-native": "0.64.0",
+    "react-native-calendar-picker": "^7.1.1",
+    "react-native-error-boundary": "^1.1.7",
+    "react-native-masked-text": "^1.13.0",
+    "react-native-svg": "^12.1.0",
+    "react-native-web": "^0.15.0",
+    "react-native-webview": "^11.3.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/runtime": "^7.12.5",
+    "@react-native-community/eslint-config": "^2.0.0",
+    "@storybook/addon-actions": "^5.3",
+    "@storybook/addon-backgrounds": "^6.1.21",
+    "@storybook/addon-controls": "^6.1.21",
+    "@storybook/addon-docs": "^6.1.21",
+    "@storybook/addon-knobs": "^5.3",
+    "@storybook/addon-links": "^5.3",
+    "@storybook/addon-ondevice-actions": "^5.3.23",
+    "@storybook/addon-ondevice-knobs": "^5.3.25",
+    "@storybook/addon-viewport": "^6.1.21",
+    "@storybook/react": "^6.1.21",
+    "@storybook/react-native": "^5.3.25",
+    "@storybook/react-native-server": "^5.3.23",
+    "babel-jest": "^26.6.3",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-react-native-web": "^0.15.0",
+    "eslint": "7.14.0",
+    "jest": "^26.6.3",
+    "metro-react-native-babel-preset": "^0.64.0",
+    "react-dom": "^17.0.2",
+    "react-native-storybook-loader": "^2.0.2",
+    "react-test-renderer": "17.0.1",
+    "storybook-addon-designs": "^5.4.5",
+    "storybook-contrast": "^0.11.6"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "config": {
+    "react-native-storybook-loader": {
+      "searchDir": [
+        "./stories/"
+      ],
+      "pattern": "**/*.stories.tsx",
+      "outputFile": "./storybook/storyLoader.js"
+    }
+  }
+}
