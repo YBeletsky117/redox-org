@@ -1,32 +1,50 @@
-# react-native-lad-mobile
+# react-native-redox
+### COMPONENTS LIB
 
 Установка пакетов проекта:
-* yarn install
+```sh
+   yarn install
+```
 
 Добавление новых пакетов:
-* yarn add package_name
+```sh
+   yarn add package_name
+```
 
 Запуск бандлера:
-* yarn start
-* yarn start --reset-cache
+```sh
+   yarn start --reset-cache
+```
 
 Запуск на android:
-* yarn android
+```sh
+   yarn android
+```
 
 Запуск на ios:
-* yarn ios
-
+```sh
+   yarn ios
+```
 
 Загрузка (обновление) компонентов в stories:
-* yarn prestorybook
+```sh
+   yarn prestorybook
+```
 
 Запуск Storybook в браузере:
-* yarn storybook
+```sh
+   yarn storybook
+```
 
 Билд статической страницы storybook. Создается папка storybook-static.
 Далее эту папку выкладываем на рабочий хостинг
-* build-storybook
+```sh
+   yarn build-storybook
+```
 
 
 Запуск на локальном сервере, установить serve. Открываем в браузере http://localhost:8080/
-* serve -d storybook-static
+```sh
+   npm -g install serve
+   serve -d storybook-static
+```
