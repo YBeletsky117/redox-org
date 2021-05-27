@@ -1,32 +1,52 @@
-# react-native-lad-mobile
+# @redox-org/react-native-redox
 
-Установка пакетов проекта:
-* yarn install
+This's library with mobile components
 
-Добавление новых пакетов:
-* yarn add package_name
+## Installation
 
-Запуск бандлера:
-* yarn start
-* yarn start --reset-cache
+```sh
+npm install @redox-org/react-native-redox
+```
 
-Запуск на android:
-* yarn android
+## Usage
+### FOR Gradient Effect
+```js
+import { Curtain } from "@redox-org/react-native-redox";
 
-Запуск на ios:
-* yarn ios
+// ...
 
+<Curtain
+    colors={['#FFF', '#000', '#222']}
+    gradientEnabled={true}
+    >
+    <>{children[0]}<> // Header
+    <>{children[1]}<> // BackComponent
+    <>{children[2]}<> // Curtain Component
+    </Curtain>
 
-Загрузка (обновление) компонентов в stories:
-* yarn prestorybook
+// ...
+```
+### FOR Default View
+```js
+import { Curtain } from "@redox-org/react-native-redox";
 
-Запуск Storybook в браузере:
-* yarn storybook
+// ...
 
-Билд статической страницы storybook. Создается папка storybook-static.
-Далее эту папку выкладываем на рабочий хостинг
-* yarn build-storybook
+<Curtain
+    styles={{...}}
+    gradientEnabled={false}>
+    <>{children[0]}<> // Header
+    <>{children[1]}<> // BackComponent
+    <>{children[2]}<> // Curtain Component
+    </Curtain>
 
+// ...
+```
 
-Запуск на локальном сервере, установить serve. Открываем в браузере http://localhost:8080/
-* serve -d storybook-static
+## Contributing
+
+See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
+
+## License
+
+MIT
